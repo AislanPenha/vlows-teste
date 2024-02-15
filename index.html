@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
@@ -7,13 +7,17 @@
     <title>CADASTRO FORNECEDOR/PRODUTO</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
 
 </head>
 
 <body>
     <div class="container-fluid ">
-        <h1 class="text-center ">CADASTRO FORNECEDOR/PRODUTO</h1>
-
+        <header>
+            <h1 class="text-center ">CADASTRO FORNECEDOR/PRODUTO</h1>
+        </header>
+    </div>
+    <div class="container">
         <fieldset class="form-group">
             <legend class="control-label bg-primary text-white p-2 rounded-top m-0">Dados do Fornecedor</legend>
             <div class="border rounded p-3">
@@ -100,59 +104,13 @@
                     </div>
             </div>
 
-            <div class="col-md-4">
-                <label for="validationCustom01" class="form-label">First name</label>
-                <input type="text" class="form-control" id="validationCustom01" required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-              </div>
+            <p id="localidade">Localidade:</p>
             <button type="submit">fdfddsgffsd</button>
             </form>
         </fieldset>
 
-        <fieldset class="form-group mt-3">
-            <legend class="control-label bg-primary text-white p-2 rounded-top m-0">Produtos</legend>
-            <div class="border rounded p-2">
-                <form>
-                    <div class="row g-3">
-                        <div class="col-1">
-                            Apagar
-                        </div>
-                        <div class="col">
-                            <fieldset class="form-group mt-3">
-                                <legend class="border">Produtos</legend>
-                            </fieldset>
-                        </div>
-                    </div>
-
-                    
-            </div>
-            </form>
-        </fieldset>
     </div>
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-(function () {
-  'use strict'
-
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  var forms = document.querySelectorAll('.needs-validation')
-
-  // Loop over them and prevent submission
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
-
-        form.classList.add('was-validated')
-      }, false)
-    })
-})()
-    </script>
+    <script src="javascript/main.js"></script>
 </body>
 
 </html>
